@@ -1,0 +1,33 @@
+type Query {
+    smokes:[Smoke!]!
+    smoke(id:ID!):Smoke
+  }
+
+  type Smoke {
+    id:ID!
+    smokeName:String!
+    smokePrice:Int!
+    smokePhoto:String!
+    smokePower:Int!
+    smokeResistance:Int!
+    smokeCapacity:Int!
+  }
+
+  type Mutation {
+
+    createSmoke(
+      smokeName: String!,smokePrice: Int!,
+      smokePhoto: String!,smokePower: Int!,
+      smokeResistance: Int!, smokeCapacity: Int!
+    ): Smoke!
+
+    deleteSmoke(id:ID!):Smoke!
+
+    updateSmoke(
+      id:ID!,
+      smokeName: String!,smokePrice: Int!,
+      smokePhoto: String!,smokePower: Int!,
+      smokeResistance: Int!, smokeCapacity: Int
+    ): Smoke!
+
+  }

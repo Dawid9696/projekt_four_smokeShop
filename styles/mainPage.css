@@ -1,0 +1,240 @@
+
+html body {
+    margin:0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Navbar {
+    width: 100%;
+    background-color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    border-left: 20px solid rgb(48, 48, 48);
+}
+
+.main {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://vapeclubpoland.pl/wp-content/themes/vcp/img/top-bkg.jpg');
+    background-size: cover;
+}
+
+.main-content{
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1350px;
+    box-sizing: border-box;
+}
+
+.item{
+    padding: 0px;
+    margin: 15px;
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.item-card:hover .item-price{
+    opacity: 1;
+    transition: all 0.5s;
+    cursor: pointer;
+    transform: scale(1.1);
+    font-size: 20px;
+}
+.item-card:hover .item-photo{
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.item-card{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgb(36, 36, 36);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.item-photo{
+    position: absolute;
+    top:0;
+    width: 300px;
+    box-sizing: border-box;
+    transition: all 0.5s; 
+}
+.item-photo-img{
+    width: 300px;
+    box-sizing: border-box;
+}
+.item-price{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    font-size: 20px;
+    top:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    opacity: 0;
+ 
+}
+
+.item-price > div{
+    width: 90%;
+    margin: 10px;
+}
+.item-name{
+    color: black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: 600;
+    height: 50px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.item-delete{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-delete:hover{
+    cursor: pointer;
+    transition: all 0.25s;
+    transform: scale(1.3);
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  .btn-7 {
+    background: linear-gradient(0deg, rgba(184, 184, 184, 0.274) 0%, rgb(73, 73, 73) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+      
+    }
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+      
+    }
+    .btn-7:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-7:hover{
+      color: rgba(251,75,2,1);
+      background: transparent;
+    }
+    .btn-7:hover:before {
+      height: 100%;
+    }
+    .btn-7:hover:after {
+      width: 100%;
+    }
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .main-content {
+         flex-direction: column;
+        }
+      }
